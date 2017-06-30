@@ -1,4 +1,4 @@
-
+#!/bin/bash
 docker stats --no-stream | awk '{ print $n }' | sed '1d'|sort | tail -1
 
 where n 
